@@ -33,7 +33,7 @@ int main()
         if (temp_win != my_console_win && HWin != temp_win && temp_win !=NULL)
         {
             HWin = temp_win;
-            LPSTR title = new char[1000]; // Old school & vulnerable to buffer overruns, but who in this case who cares?
+            LPSTR title = new char[1000]; // Old school & vulnerable to buffer overruns, but in this case who cares?
             BOOL got_wnd_info = GetWindowTextA(HWin, title, 1000);
             std::cout << "Captured \"" << title << "\".\n";
 
